@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.uploadBox{
+    width: 60vw;
+    height: 40vh;
+    background-color: white;
+    border-radius: 10px;
+    opacity: 0.9;
+    border-radius: 5px;
+}
+.headerUploadBox{
+    height: 50px;
+    background-color: white;
+    display: flex;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom: 1px solid rgb(218, 217, 217);
+}
+.titleUploadBox{
+    flex: 8;
+    color: black;
+    text-align: center;
+    padding-top: 1%;
+    font-size: 20px;
+}
+.logoutUploadBox{
+    flex:2;
+}
+.logoUploadBox{
+    flex:2;
+}
+.bodyGenerateSeatingArrangementBox{
+    background-color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2px;
+}
+.logoutButton{
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    border-color: black;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+}
+.upperBodyBox{
+    flex: 6;
+    display: flex;
+}
+.lowerBodyBox{
+    flex: 6;
+    display: flex;
+}
+.upperColumns{
+    flex:3;
+    /* border: 1px solid rgb(241, 238, 238); */
+    padding: 2% 5%;
+}
+.lowerColumns{
+    flex:4;
+    /* border: 1px solid rgb(241, 238, 238); */
+    padding: 2% 5%;
+}
+.customButton{
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+.customNextButton{
+    font-size: 14px;
+    padding: 2px 37%;
+}
