@@ -149,11 +149,21 @@ console.log( file.SheetNames.length);
                     // console.log( "all "+res.year +" "+ res.semester+" "+res.branch)
                     // console.log("nee "+year +" "+ sem+" "+branch)
                     if(branch==="All"){
-                      if(res.semester === sem  && res.year == year && res.branch === "CSE"){
-                       // console.log("Op bhai Op")
-                        courses.push(res.coursecode);
-                        fullcourses.push(res.coursename);
+                      if(year=="1"){
+                        if(res.semester === sem  && res.year == year && res.branch==="CSE" ){
+                         // console.log("Op bhai Op")
+                          courses.push(res.coursecode);
+                          fullcourses.push(res.coursename);
+                        }
                       }
+                      else{
+                        if(res.semester === sem  && res.year == year ){
+                         // console.log("Op bhai Op")
+                          courses.push(res.coursecode);
+                          fullcourses.push(res.coursename);
+                        }
+                      }
+
                     }
                     else{
                       if(res.semester === sem && res.branch === branch && res.year == year){
@@ -247,7 +257,7 @@ console.log( file.SheetNames.length);
             const ws = reader.utils.json_to_sheet(arr)
           //  console.log("hello " + index);
             var num = index+adder;
-            var sheetName = "sheet"+num.toString();
+            var sheetName = exam+"_"+num.toString();
             console.log(num);
             console.log(sheetName);
             reader.utils.book_append_sheet(file,ws,sheetName);
